@@ -1,0 +1,15 @@
+{
+  "model": "llava-hf/llava-1.5-7b-hf",
+  "samples": "../data/hades.json",
+  "output": "../outputs/defense",
+  "mode": "defense",
+  "device": "cuda",
+  "dtype": "float16",
+  "max_new_tokens": 128,
+  "save_hidden": false,
+  "seed": 0,
+  "direction": "../outputs/direction.npz",
+  "threshold": 0.2,
+  "strength": 1.0,
+  "projection": "signed"
+}

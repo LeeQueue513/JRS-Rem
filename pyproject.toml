@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jrs-rem"
+version = "0.2.0"
+description = "LLaVA inference and representation analysis for JRS-Rem"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "Pillow>=10"]
+
+[project.optional-dependencies]
+inference = ["torch>=2.6", "transformers>=4.49,<6", "accelerate>=1", "sentencepiece>=0.2"]
+analysis = ["matplotlib>=3.8"]
+
+[project.scripts]
+jrs-rem = "jrs_rem.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

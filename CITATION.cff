@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite the paper below."
+title: "JRS-Rem: LLaVA implementation"
+version: 0.2.0
+license: MIT
+authors: &authors
+  - family-names: Wei
+    given-names: Zhihua
+  - family-names: Li
+    given-names: Qiang
+  - family-names: Ruan
+    given-names: Jian
+  - family-names: Qin
+    given-names: Zhenxin
+  - family-names: Wen
+    given-names: Leilei
+  - family-names: Qin
+    given-names: Ruiyang
+  - family-names: Wang
+    given-names: Qingzhuo
+  - family-names: Liu
+    given-names: Dongrui
+  - family-names: Shen
+    given-names: Wen
+preferred-citation:
+  type: conference-paper
+  title: "Understanding and Defending VLM Jailbreaks via Jailbreak-Related Representation Shift"
+  authors: *authors
+  year: 2026
+  collection-title: "Advances in Neural Information Processing Systems"
+  url: "https://openreview.net/forum?id=ovIB52cIlw"
